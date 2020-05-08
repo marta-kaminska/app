@@ -1,48 +1,76 @@
 body{
-    background-color: #333333;
+    background-color: white;
+    font-family: 'Indie Flower', cursive;
 }
 #menu{
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
     display: flex;
-    color: white;
+    color: black;
     font-weight: 700;
 }
 #menu span{
     margin-left: 2vw;
 }
+
 #przyciski{
     display: flex;
     margin-left: 15vw;
 }  
 #przyciski a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .przycisk{
     margin-left: 5vw;
-    border:solid 5px;
-    border-radius: 30%;
-    border-color: #333333;
+    border-radius: 10%;
+    border: solid 3px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(black, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     align-items: center;
     justify-content: center;
     display: flex;
     width: 10vw;
 }
 .przycisk:hover{
-    border-color: #e60073;
+    
+    background-image: linear-gradient(white, white), linear-gradient(#1a75ff, #e600e6);
 }
 #socials{
     display: flex;
-    margin-left: 15vw;
+    margin-left: 14vw;
 }
 .social{
-    margin-left: 2vw;
+    margin-left: 0,1vw;
+}
+#socials a{
+    text-decoration: none;
+    color: black;
 }
 #content{
-    background-color: lime;
+    background-color: white;
     margin-left: 10%;
     margin-right: 10%;
     height: 600px;
     margin-top: 2%;
+}
+.foto{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.foto img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#hobby{
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+.opis{
+    text-align: center;
 }
