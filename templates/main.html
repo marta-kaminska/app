@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <span>
+            Marta <br> Kamińska
+        </span>
+        <div id="przyciski">
+            <a href="http://127.0.0.1:5000/">
+                <div class="przycisk">
+                    O mnie
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5000/projekty">
+                <div class="przycisk">
+                    Projekty
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5000/hobby">
+                <div class="przycisk">
+                    Hobby
+                </div>
+            </a>
+        </div>
+        <div id="socials">
+            <div class="social">
+                LI
+            </div>
+            <div class="social">
+                GH
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

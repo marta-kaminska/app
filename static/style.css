@@ -1,0 +1,48 @@
+body{
+    background-color: #333333;
+}
+#menu{
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    display: flex;
+    color: white;
+    font-weight: 700;
+}
+#menu span{
+    margin-left: 2vw;
+}
+#przyciski{
+    display: flex;
+    margin-left: 15vw;
+}  
+#przyciski a{
+    text-decoration: none;
+    color: white;
+}
+.przycisk{
+    margin-left: 5vw;
+    border:solid 5px;
+    border-radius: 30%;
+    border-color: #333333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 10vw;
+}
+.przycisk:hover{
+    border-color: #e60073;
+}
+#socials{
+    display: flex;
+    margin-left: 15vw;
+}
+.social{
+    margin-left: 2vw;
+}
+#content{
+    background-color: lime;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 600px;
+    margin-top: 2%;
+}
