@@ -1,42 +1,36 @@
 body{
     background-color: white;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Muli', sans-serif;
 }
 #menu{
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Muli', sans-serif;
     font-size: 30px;
     display: flex;
     color: black;
     font-weight: 700;
-}
-#menu span{
-    margin-left: 2vw;
+    width: 100%;
+    background-color: black;
 }
 
 #przyciski{
     display: flex;
     margin-left: 15vw;
+    padding-top: 20px;
 }  
 #przyciski a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .przycisk{
     margin-left: 5vw;
-    border-radius: 10%;
-    border: solid 3px transparent;
-    background-image: linear-gradient(white, white), linear-gradient(black, black);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 10vw;
+    width: 13vw;
+    background-color: black;
+    height: 5vh;
 }
-.przycisk:hover{
-    
-    background-image: linear-gradient(white, white), linear-gradient(#1a75ff, #e600e6);
-}
+
 #socials{
     display: flex;
     margin-left: 14vw;
@@ -66,11 +60,30 @@ body{
     max-height: 300px;
 }
 
-#hobby{
+.wszystko{
     margin-left: 15%;
     margin-right: 15%;
 
 }
 .opis{
     text-align: center;
+}
+
+.projekty{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.wyroznienie{
+    color: blue;
+    font-weight: 700;
+}
+
+#content a{
+    text-decoration: none;
+    color: white;
+
+}
+.git{
+    background-color: black;
 }
