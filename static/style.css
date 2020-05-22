@@ -1,89 +1,200 @@
-body{
-    background-color: white;
-    font-family: 'Muli', sans-serif;
-}
-#menu{
-    font-family: 'Muli', sans-serif;
-    font-size: 30px;
-    display: flex;
-    color: black;
-    font-weight: 700;
-    width: 100%;
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-#przyciski{
-    display: flex;
-    margin-left: 15vw;
-    padding-top: 20px;
-}  
-#przyciski a{
-    text-decoration: none;
-    color: white;
+html{
+    scroll-behavior: smooth;
 }
-.przycisk{
-    margin-left: 5vw;
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    height: 50px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    width: 13vw;
-    background-color: black;
-    height: 5vh;
 }
 
-#socials{
+.nav ul{
     display: flex;
-    margin-left: 14vw;
-}
-.social{
-    margin-left: 0,1vw;
-}
-#socials a{
-    text-decoration: none;
-    color: black;
-}
-#content{
-    background-color: white;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 600px;
-    margin-top: 2%;
-}
-.foto{
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-
-}
-.foto img{
-    max-width: 300px;
-    max-height: 300px;
+    margin-left: 500px;
 }
 
-.wszystko{
-    margin-left: 15%;
-    margin-right: 15%;
-
-}
-.opis{
-    text-align: center;
+.nav ul li{
+    list-style: none;
 }
 
-.projekty{
-    margin-top: 40px;
-    margin-bottom: 100px;
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    margin: 0 15px;
+    letter-spacing: 2px;
 }
 
-.wyroznienie{
-    color: blue;
+.social{
+    margin-left: 380px;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.social img{
+    max-width: 40px;
+}
+
+#o-mnie{
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    word-wrap: break-word;
+    font-size: 1.4em;
+}
+
+.text{
+    width: 700px;
+}
+
+#o-mnie img{
+    max-width: 200px;
+}
+
+#projekty{
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    word-wrap: break-word;
+    flex-direction: column;
+}
+
+#projekty li{
+    margin-bottom: 30px;
+    list-style-type: circle;
+    font-size: 1.4em;
+}
+
+#projekty a{
+    text-decoration: none;
+    color: white;
     font-weight: 700;
 }
 
-#content a{
-    text-decoration: none;
-    color: white;
-
-}
 .git{
+    background-color: #eb34ae;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#hobby{
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    word-wrap: break-word;
+}
+
+.tech{
+    color: #00ccff;
+    font-weight: 700;
+}
+
+.framework{
+    color: #eb34ae;
+    font-weight: 700;
+}
+
+.stack{
+    color: #99ff33;
+    font-weight: 700;
+}
+
+#hobby{
+    flex-direction: column;
+}
+
+.foto-multi{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.foto-single{
+    display: flex;
+    justify-content: center;
+}
+
+#hobby img{
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+h1{
+    margin-top: 70px;
+    font-size: 1.8em;
+}
+
+.tekst{
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+#mobile{
+    display: none;
+}
+
+@media (max-width: 992px)
+{
+    .nav{
+        display: none;
+    }
+    #o-mnie{
+        display: none;
+    }
+    #projekty{
+        display: none;
+    }
+    #hobby{
+        display: none;
+    }
+    #mobile{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

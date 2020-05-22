@@ -1,18 +1,21 @@
 {% extends "main.html" %}
     {% block content %}
-    <div class="wszystko">
-        <p class="projekty"> 
-            Moim pierwszym projektem jest niniejsza strona www. Została ona napisana z wykorzystaniem <span class="wyroznienie">HTML</span> oraz <span class="wyroznienie">CSS</span>. <span class="wyroznienie">CSS</span> jest w czystej postaci bez wykorzystania żadnego frameworka. Backend strony napisany został w języku <span class="wyroznienie">Python</span>, z wykorzystaniem frameworka <span class="wyroznienie">Flask</span>.
-            <a href="https://github.com/marta-kaminska/app" target="_blank">
-                <div class="git"> OTWÓRZ W GITHUB ></div>
-            </a>
-        </p>
+    <div id="projekty">
+        <li> 
+            Moim pierwszym projektem jest niniejsza strona WWW. Strona jest stworzona jako jedno-stronna wizytówka. Została ona napisana z wykorzystaniem <span class="tech">HTML</span> oraz <span class="tech">CSS</span>. <span class="tech">CSS</span> jest w czystej postaci bez wykorzystania żadnego frameworka. 
+        </li>
         
-        <p class="projekty">
-            Drugim projektem jest aplikacja do webscrapingu. Aplikacja pobiera dane o promocjach w wybranych sklepach internetowych popularnych sieci. Aplikacja została napisana w języku <span class="wyroznienie">Python</span>, z wykorzystaniem frameworka <span class="wyroznienie">Selenium</span>. 
-            <a href="https://github.com/marta-kaminska/web-scrap" target="_blank">
-                <div class="git"> OTWÓRZ W GITHUB ></div>
-            </a>
-        </p>
-    </div>
+        <li>
+            Kontynuacją powyższego projektu jest analogiczna strona, która posiada już <span class="stack">Back-End</span> oparty na frameworku <span class="framework">Flask</span>. Kod strony dostępny w linku poniżej: 
+        </li>
+        <a href="https://github.com/marta-kaminska/app" target="_blank">
+            <div class="git"> OTWÓRZ W GITHUB</div>
+        </a>
+        <li>
+            Trzecim projektem jest aplikacja do <span class="stack">Web-Scrapingu</span>. Aplikacja pobiera dane o promocjach w wybranych sklepach internetowych popularnych sieci. Aplikacja została napisana w języku <span class="tech">Python</span>, z wykorzystaniem frameworka <span class="framework">Selenium</span>.   
+        </li>
+        <a href="https://github.com/marta-kaminska/web-scrap" target="_blank">
+            <div class="git"> OTWÓRZ W GITHUB</div>
+        </a>
+</div>
     {% endblock %}

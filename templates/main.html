@@ -8,38 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="menu">
-        
-        <div id="przyciski">
-            <a href="http://127.0.0.1:5000/">
-                <div class="przycisk">
-                    O MNIE
-                </div>
-            </a>
-            <a href="http://127.0.0.1:5000/projekty">
-                <div class="przycisk">
-                    PROJEKTY
-                </div>
-            </a>
-            <a href="http://127.0.0.1:5000/hobby">
-                <div class="przycisk">
-                    HOBBY
-                </div>
-            </a>
-        </div>
-        <div id="socials">
-            <a href="https://www.linkedin.com/in/marta-kami%C5%84ska-5b85631a9/" target="_blank">
-                <div class="social">
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a href="/">O mnie</a></li>
+                <li><a href="/projekty">Projekty</a></li>
+                <li><a href="/hobby">Hobby</a></li>
+            </ul> 
+            <div class="social">
+                <a href="https://www.linkedin.com/in/marta-kami%C5%84ska-5b85631a9/" target="_blank">
                     <img src="https://img.icons8.com/nolan/64/linkedin-circled.png"/>
-                </div>
-            </a>
-            <a href="https://github.com/marta-kaminska/" target="_blank"> 
-                <div class="social">   
+                </a>
+                <a href="https://github.com/marta-kaminska/" target="_blank">
                     <img src="https://img.icons8.com/nolan/64/github.png"/>
-                </div>
-            </a>
+                </a>    
+            </div> 
         </div>
-    </div>
     <div id="content">
         {% block content %}
         {% endblock %}
